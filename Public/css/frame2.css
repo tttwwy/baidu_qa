@@ -1,0 +1,14 @@
+div.left_timelime,div.right_detail{
+	height:500px;
+	border: 1px solid #000;
+	float:left;
+	margin: 5px;
+}
+
+div.left_timelime{
+	width:250px;
+}
+
+div.right_detail{
+	width:796px;
+}

@@ -1,0 +1,17 @@
+//html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, sup, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
+//	font-family:	Microsoft Yahei;
+//	font-weight:	normal;
+//	font-size:		16px;
+//	font-weight:	normal;
+//	text-align:		left;
+//}
+//
+//div[type="frame_title"]{
+//	font-size: 22px;
+//	font-weight: normal;
+//	color: #222;
+//	top: 20px;
+//	font-family: Microsoft Yahei;
+//	background:#F1F1F1;
+//	width:100%;
+//}

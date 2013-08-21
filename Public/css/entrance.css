@@ -1,0 +1,17 @@
+div.block{
+	float:	left;
+	height:	160px;
+	width:	300px;
+	text-align:	center;
+	line-height:160px;
+	background:	#D6E9F8;
+	margin:	120px 50px 120px 50px;
+	font-size: 25px;
+	font-weight: normal;
+	color: #222;
+	font-family: Microsoft Yahei;
+}
+
+div.block.left{
+	margin-left:185px;
+}

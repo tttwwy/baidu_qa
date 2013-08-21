@@ -1,0 +1,76 @@
+<F3:include href="common/header.html" />
+
+<div class="container">
+
+<div class="row">
+<div class="span2">
+<F3:include href="common/sidebar.html" />
+</div>
+<div class="span10">
+
+<h1>{{@title}}</h1>
+<article class="event">
+
+<form class="form-horizontal" method='post' enctype="multipart/form-data">
+
+<fieldset>
+<legend>基本信息</legend>
+<div class="control-group">
+<label class="control-label" for="input01">活动名称</label>
+
+<div class="controls"> <input type="text" class="input-xlarge" id="input01" name ="title" value="{{@event['title']}}"> <span class="help-inline">4~16个字符之间</span> </div>
+</div>
+<div class="control-group">
+<label class="control-label" for="input01">活动地点</label>
+
+<div class="controls"> <input type="text" class="input-xlarge" id="input01" name ="location" value="{{@event['location']}}"> <span class="help-inline">2~15个字符之间</span> </div>
+</div>
+<div class="control-group">
+<label class="control-label" for="input01">开始时间</label>
+
+<div class="controls" > <input data-date-format="yyyy-mm-dd" type="text" class="datepicker input-xlarge" id="datetime" name ="starttime" value="{{@event['starttime']}}"> <span class="help-inline">时间格式：YYYY-MM-DD HH:MM:SS</span> </div>
+</div>
+<div class="control-group">
+<label class="control-label" for="input01">结束时间</label>
+
+<div class="controls"> <input data-date-format="yyyy-mm-dd" type="text" class="datepicker input-xlarge" id="input01" name ="endtime" value ="{{@event['endtime']}}"><span class="help-inline">时间格式：YYYY-MM-DD HH:MM:SS</span> </div>
+</div>
+<div class="control-group">
+<label class="control-label" for="input01">分类</label>
+<div class="controls"> <select name="sort" value="{{@event['sort']}}">
+<option value="旅行">旅行</option>
+<option value="讲座">讲座</option>
+<option value ="音乐">音乐</option>
+<option value ="聚会">聚会</option>
+<option value ="电影">电影</option>
+<option value ="运动">运动</option>
+<option value = "其他">其他</option>
+</select> <span class="help-inline">选择适当的分类会增加你的活动的曝光率</span> </div>
+</div>
+<input type="hidden" name="label"/>
+<input type="hidden" name="eid" value="{{@eid}}">
+<div class="control-group">
+<label class="control-label" for="input01">主图片</label>
+<div class="controls"> <input type="file" class="input-file input-xlarge" id="input01" name="avatar"> <span class="help-inline">建议大小, 800x350像素</span></div>
+</div>
+</fieldset>
+<fieldset>
+<legend>活动详情</legend>
+
+<div class="control-group">
+
+<textarea class="input-xlarge" style="width:90%;height:250px;" name="introduction">{{@event['introduction']}}</textarea>
+</div>
+</fieldset>
+
+<p>
+<button type="submit" class="btn btn-primary"><i class="icon-ok-sign"></i> 保存活动</button>
+</p>
+</form>
+
+</article>
+</div><!-- span10 -->
+</div><!-- row -->
+</div><!-- Container -->
+
+<F3:include href="common/footer.html" />
